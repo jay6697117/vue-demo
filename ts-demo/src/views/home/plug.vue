@@ -17,7 +17,7 @@ import Global from '../../modules/Global';
 @Component({})
 export default class PlugPage extends Vue {
     /** vuex homeData */
-    @State('homeData') homeData: HomeDataType;
+    @State('homeData') homeData!: HomeDataType;
 
     /** 自定状态数据 */
     private diyData = Global.store;

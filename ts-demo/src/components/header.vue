@@ -18,13 +18,13 @@ import { Component, Watch, Prop, Emit, Vue  } from 'vue-property-decorator';
 @Component({})
 export default class HeaderComponent extends Vue {
     @Prop({ default: '返回' })
-    private left: string;
+    private left!: string;
     
     @Prop({ default: 'title' })
-    private title: string;
+    private title!: string;
 
     @Prop({ default: '' })
-    private right: string;
+    private right!: string;
 
     @Emit('onLeft') leftClick() {
 

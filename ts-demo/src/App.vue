@@ -17,7 +17,7 @@ export default class RootModule extends Vue {
     transitionName: string = 'page-next';
 
     /** 监听路由变化 */
-    @Watch('$route') onRoute(to, from) {
+    @Watch('$route') onRoute(to: any, from: any) {
         //  监听路由变化时的状态为前进还是后退
         if(this['$router'].isBack) {
             this.transitionName = 'page-back';

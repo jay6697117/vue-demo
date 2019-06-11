@@ -4,7 +4,8 @@ class utilsModule {
      * rem 适应
      * @param el 指定元素适配
      */
-    remSetting(el: HTMLElement) {
+    remSetting(el: HTMLElement | null) {
+        if (!el) return;
         const html = document.documentElement; // 注意这里不能 使用 document.body
         /** 比例值 */
         let value = 375 / 50;

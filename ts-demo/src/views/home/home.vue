@@ -14,7 +14,7 @@ import Global from '../../modules/Global';
 
 @Component({})
 export default class HomePage extends Vue {
-    @State('homeData') homeData: HomeDataType;
+    @State('homeData') homeData!: HomeDataType;
 
     /** 自定状态数据 */
     diyData = Global.store;
