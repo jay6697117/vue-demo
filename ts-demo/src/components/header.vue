@@ -3,17 +3,15 @@
         <div class="item" @click="leftClick">
             <div>{{ left }}</div>
         </div>
-        <div class="title-box">
-            <div>{{ title }}</div>
-        </div>
+        <div class="title-box">{{ title }}</div>
         <div class="item right">
-            {{ right }}
+            <div>{{ right }}</div>
         </div>
     </header>
 </template>
 
 <script lang="ts">
-import { Component, Watch, Prop, Emit, Vue  } from 'vue-property-decorator';
+import { Component, Watch, Prop, Emit, Vue } from 'vue-property-decorator';
 
 @Component({})
 export default class HeaderComponent extends Vue {
@@ -36,10 +34,10 @@ export default class HeaderComponent extends Vue {
 @import "../../static/style/base.less";
 .header{
     width: 100%; height: .88rem; .flex(); .fvertical(); background-color: @themeColor; .card(); margin-bottom: 10px;
-    .title-box{ .f(3); color: #fff; .s1(); text-align: center; .flex(); .fvertical(); .fcenter(); }
-    .item{ font-size: .28rem; color: #fff; .f(1); padding: 0 .2rem; cursor: pointer; .flex(); .fvertical(); }
-    .title-box div, .item div{ .ellipsis(); }
-    .right{ text-align: right; }
+    .title-box{ .f(3); color: #fff; .s1(); text-align: center; .ellipsis(); }
+    .item{ font-size: .28rem; color: #fff; .f(1); height: .88rem; padding: 0 .2rem; cursor: pointer; .flex(); .fvertical(); }
+    .item div{ .ellipsis(); }
+    .right{ text-align: right; .fright(); }
 }
 </style>
 
