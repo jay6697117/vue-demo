@@ -1,0 +1,38 @@
+.transition(@time){ -webkit-transition: @time all; transition: @time all; }
+// 弹性盒子
+.flex(){ display: -webkit-box; display: -webkit-flex; display: flex; flex-wrap: wrap }
+// 水平居中
+.fcenter(){ -webkit-box-pack: center; justify-content: center; }
+// 垂直居中
+.fvertical(){ -webkit-box-align: center; align-items: center; }
+// 弹性盒子分块
+.f(@num){ -webkit-box-flex: @num; -webkit-flex: @num; flex: @num; }
+// 渐变背景
+.bg(){ background: linear-gradient(90deg, #31a2f7, #29d0f4); }
+// 单行溢出...
+.ellipsis(){ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+// 多行溢出 ...
+.textWrap(@num){ display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: @num; text-overflow: ellipsis; overflow: hidden; }
+// 背景自动填充
+.autoBg(){ background-size: cover; background-position: center center; }
+// 卡片阴影
+.card(){ box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12); }
+// 按钮阴影
+.btnShadow{ box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12); }
+// 圆角
+.radius(){ border-radius: 5px; }
+
+// 默认字体颜色
+@textColor: #333;
+// 主题颜色
+@themeColor: #42b983;
+// 灰色色字体
+@gray: #999;
+// 价格颜色
+@red: #ea0404;
+// 标题字体大小
+.st(){ font-size: .36rem; }
+// 标准字体
+.s1(){ font-size: .3rem; }
+// 标签字体
+.s2(){ font-size: .24rem; }
