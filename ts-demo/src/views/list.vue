@@ -110,7 +110,7 @@ export default class ListPage extends Vue {
     .list{ 
         width: 100%; .flex();
         .list-item{ 
-            width: 50%; padding: 20px;
+            width: 50%; padding: 20px; background-color: #fff;
             .content{ 
                 width: 100%; .card(); .radius(); padding: 10px; 
                 .shop-img{ width: 100%; margin-bottom: .2rem; }

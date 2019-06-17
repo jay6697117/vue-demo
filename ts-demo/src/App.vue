@@ -79,22 +79,20 @@ export default class RootModule extends Vue {
     /* =================== 列表过渡动画 ===================== */
 
     // 动画列表最外层容器
-    .move-list{ position: relative; }
+    .move-list{ 
+        // position: relative; 
+    }
     // 动画列表item
     .move-list-item{ transition: .8s all; }
     // 列表动画
     .listMove-leave-active{
+        // position: absolute;
         opacity: 0;
-        position: absolute;
         transform: scale(0.5,0.5);
-        -webkit-transform: scale(0.5,0.5);
-        -ms-transform: scale(0.5,0.5);
     }
     .listMove-enter {
         opacity: 0;
-        transform: translateY(60%);
-        -webkit-transform: scale(0.5,0.5);
-        -ms-transform: scale(0.5,0.5);
+        transform: translateY(50%);
     }
 }
 </style>
